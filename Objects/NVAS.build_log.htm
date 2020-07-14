@@ -1,0 +1,163 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Shreyas Poyrekar, University of Houston, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  D:\Shreyas Poyrekar\Program Files\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\Shreyas Poyrekar\Documents\University of Houston\1st Semester\Advance Microprocessor Systems - 6336\Project\NIVAS\NVAS.uvprojx
+Project File Date:  11/30/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Shreyas Poyrekar\Program Files\ARM\ARMCC\Bin'
+Rebuild target 'TIVA-C'
+assembling cortex_m_port.s...
+assembling cpu_a.asm...
+compiling PLL.c...
+compiling lib_math.c...
+assembling startup_TM4C123.s...
+compiling cpu_core.c...
+compiling lib_ascii.c...
+compiling cpu_c.c...
+assembling os_cpu_a.asm...
+compiling lib_mem.c...
+compiling os_cfg_app.c...
+compiling system_TM4C123.c...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+compiling os_int.c...
+compiling lib_str.c...
+compiling os_core.c...
+compiling os_mem.c...
+compiling os_flag.c...
+compiling app.c...
+app.c(294): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	return y+(0.001*(x-y));     				//this is an equation implemented
+app.c(296): warning:  #1-D: last line of file ends without a newline
+   
+app.c: 2 warnings, 0 errors
+compiling os_msg.c...
+compiling os_pend_multi.c...
+compiling os_prio.c...
+compiling os_mutex.c...
+compiling os_sem.c...
+compiling os_q.c...
+compiling os_time.c...
+compiling os_tick.c...
+compiling os_stat.c...
+compiling os_tmr.c...
+compiling os_var.c...
+compiling os_task.c...
+linking...
+Program Size: Code=16464 RO-data=1152 RW-data=328 ZI-data=15752  
+FromELF: creating hex file...
+".\Objects\NVAS.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Micrium
+                http://www.micrium.com/cmsis-pack/Micrium.RTOS.1.0.0.pack
+                Micrium.RTOS.1.0.0
+                Micrium software components
+   * Component: uC/OS Common Version: 1.0.0
+   * Component: uC/OS Kernel Variant: uCOS-III Version: 1.0.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\RTOS
+  .\RTE\_TIVA-C
+  D:\Shreyas Poyrekar\Program Files\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  D:\Shreyas Poyrekar\Program Files\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+  D:\Shreyas Poyrekar\Program Files\ARM\PACK\Micrium\RTOS\1.0.0\Software\uC-CPU
+  D:\Shreyas Poyrekar\Program Files\ARM\PACK\Micrium\RTOS\1.0.0\Software\uC-CPU\ARM-Cortex-M4\RealView
+  D:\Shreyas Poyrekar\Program Files\ARM\PACK\Micrium\RTOS\1.0.0\Software\uC-LIB
+  D:\Shreyas Poyrekar\Program Files\ARM\PACK\Micrium\RTOS\1.0.0\Software\uCOS-III\Ports\ARM-Cortex-M4\Generic\RealView
+  D:\Shreyas Poyrekar\Program Files\ARM\PACK\Micrium\RTOS\1.0.0\Software\uCOS-III\Source
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
+
+   * Component: Micrium.Micrium::RTOS:uC/OS Common:1.0.0
+      Include file:  cfg\cpu_cfg.h
+      Include file:  Software\uC-CPU\cpu_cache.h
+      Source file:   Software\uC-CPU\cpu_core.c
+      Include file:  Software\uC-CPU\cpu_core.h
+      Include file:  Software\uC-CPU\cpu_def.h
+      Source file:   Software\uC-LIB\lib_math.c
+      Include file:  Software\uC-LIB\lib_mem.h
+      Source file:   Software\uC-LIB\lib_str.c
+      Include file:  Software\uC-LIB\lib_str.h
+      Source file:   Software\uC-CPU\ARM-Cortex-M4\RealView\cpu_a.asm
+      Include file:  Software\uC-LIB\lib_math.h
+      Include file:  Software\uC-LIB\lib_ascii.h
+      Include file:  cfg\lib_cfg.h
+      Source file:   Software\uC-CPU\ARM-Cortex-M4\RealView\cpu_c.c
+      Include file:  Software\uC-LIB\lib_def.h
+      Source file:   Software\uC-LIB\lib_mem.c
+      Source file:   Software\uC-LIB\lib_ascii.c
+      Include file:  Software\uC-CPU\ARM-Cortex-M4\RealView\cpu.h
+
+   * Component: Micrium.Micrium::RTOS:uC/OS Kernel:uCOS-III:1.0.0
+      Include file:  cfg\uCOS-III\os_cfg_app.h
+      Source file:   Software\uCOS-III\Source\os_int.c
+      Source file:   Software\uCOS-III\Source\os_mem.c
+      Include file:  Software\uCOS-III\Source\os.h
+      Include file:  cfg\uCOS-III\os_cfg.h
+      Source file:   Software\uCOS-III\Source\os_cfg_app.c
+      Source file:   Software\uCOS-III\Source\os_core.c
+      Source file:   Software\uCOS-III\Source\os_flag.c
+      Source file:   Software\uCOS-III\Source\os_msg.c
+      Source file:   Software\uCOS-III\Source\os_mutex.c
+      Source file:   Software\uCOS-III\Source\os_dbg.c
+      Source file:   Software\uCOS-III\Source\os_pend_multi.c
+      Include file:  cfg\app_cfg.h
+      Source file:   Software\uCOS-III\Source\os_time.c
+      Source file:   Software\uCOS-III\Source\os_tmr.c
+      Include file:  Software\uCOS-III\Source\os_type.h
+      Source file:   Software\uCOS-III\Source\os_var.c
+      Source file:   Software\uCOS-III\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu_a.asm
+      Source file:   Software\uCOS-III\Source\os_prio.c
+      Source file:   Software\uCOS-III\Source\os_q.c
+      Source file:   Software\uCOS-III\Source\os_tick.c
+      Source file:   Software\uCOS-III\Source\os_stat.c
+      Source file:   Software\uCOS-III\Source\os_task.c
+      Include file:  Software\uCOS-III\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h
+      Source file:   Software\uCOS-III\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu_c.c
+      Source file:   Software\uCOS-III\Source\os_sem.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

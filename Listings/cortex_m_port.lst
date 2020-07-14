@@ -1,0 +1,93 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 PRESERVE8
+    2 00000000                 THUMB
+    3 00000000         
+    4 00000000                 AREA             CODE, CODE, READONLY
+    5 00000000         
+    6 00000000                 IMPORT           OS_CPU_PendSVHandler
+    7 00000000                 IMPORT           OS_CPU_SysTickHandler
+    8 00000000         
+    9 00000000                 EXPORT           PendSV_Handler
+   10 00000000         PendSV_Handler
+   11 00000000 F7FF BFFE       B                OS_CPU_PendSVHandler
+   12 00000004 E7FE            B                .
+   13 00000006         
+   14 00000006                 EXPORT           SysTick_Handler
+   15 00000006         SysTick_Handler
+   16 00000006 F7FF BFFE       B                OS_CPU_SysTickHandler
+   17 0000000A E7FE            B                .
+   18 0000000C         
+   19 0000000C                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\cortex_m_port.d -o.\objects\cortex_m_port.o -I.\RTE\R
+TOS -I.\RTE\_TIVA-C -I"D:\Shreyas Poyrekar\Program Files\ARM\PACK\ARM\CMSIS\5.4
+.0\CMSIS\Core\Include" -I"D:\Shreyas Poyrekar\Program Files\ARM\PACK\Keil\TM4C_
+DFP\1.1.0\Device\Include\TM4C123" -I"D:\Shreyas Poyrekar\Program Files\ARM\PACK
+\Micrium\RTOS\1.0.0\Software\uC-CPU" -I"D:\Shreyas Poyrekar\Program Files\ARM\P
+ACK\Micrium\RTOS\1.0.0\Software\uC-CPU\ARM-Cortex-M4\RealView" -I"D:\Shreyas Po
+yrekar\Program Files\ARM\PACK\Micrium\RTOS\1.0.0\Software\uC-LIB" -I"D:\Shreyas
+ Poyrekar\Program Files\ARM\PACK\Micrium\RTOS\1.0.0\Software\uCOS-III\Ports\ARM
+-Cortex-M4\Generic\RealView" -I"D:\Shreyas Poyrekar\Program Files\ARM\PACK\Micr
+ium\RTOS\1.0.0\Software\uCOS-III\Source" --predefine="__EVAL SETA 1" --predefin
+e="__UVISION_VERSION SETA 526" --predefine="_RTE_ SETA 1" --predefine="TM4C123G
+H6PM SETA 1" --list=.\listings\cortex_m_port.lst cortex_m_port.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+CODE 00000000
+
+Symbol: CODE
+   Definitions
+      At line 4 in file cortex_m_port.s
+   Uses
+      None
+Comment: CODE unused
+PendSV_Handler 00000000
+
+Symbol: PendSV_Handler
+   Definitions
+      At line 10 in file cortex_m_port.s
+   Uses
+      At line 9 in file cortex_m_port.s
+Comment: PendSV_Handler used once
+SysTick_Handler 00000006
+
+Symbol: SysTick_Handler
+   Definitions
+      At line 15 in file cortex_m_port.s
+   Uses
+      At line 14 in file cortex_m_port.s
+Comment: SysTick_Handler used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+OS_CPU_PendSVHandler 00000000
+
+Symbol: OS_CPU_PendSVHandler
+   Definitions
+      At line 6 in file cortex_m_port.s
+   Uses
+      At line 11 in file cortex_m_port.s
+Comment: OS_CPU_PendSVHandler used once
+OS_CPU_SysTickHandler 00000000
+
+Symbol: OS_CPU_SysTickHandler
+   Definitions
+      At line 7 in file cortex_m_port.s
+   Uses
+      At line 16 in file cortex_m_port.s
+Comment: OS_CPU_SysTickHandler used once
+2 symbols
+340 symbols in table
